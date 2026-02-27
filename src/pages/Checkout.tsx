@@ -13,6 +13,32 @@ const Checkout = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    // Build WhatsApp message with full order details
+    const orderLines = items.map(
+      (item) => `• ${item.name} × ${item.quantity} = PKR ${(item.price * item.quantity).toLocaleString()}`
+    );
+    const message = [
+      `🛒 *New Order — MG Brands Pakistan*`,
+      ``,
+      `*Customer:* ${form.name}`,
+      `*Phone:* ${form.phone}`,
+      `*City:* ${form.city}`,
+      `*Address:* ${form.address}`,
+      ``,
+      `*Order Items:*`,
+      ...orderLines,
+      ``,
+      `*Subtotal:* PKR ${totalPrice.toLocaleString()}`,
+      `*Delivery:* PKR ${deliveryCharge}`,
+      `*Total:* PKR ${(totalPrice + deliveryCharge).toLocaleString()}`,
+      ``,
+      `Payment: Cash on Delivery`,
+    ].join("\n");
+
+    const waUrl = `https://wa.me/923291497570?text=${encodeURIComponent(message)}`;
+    window.open(waUrl, "_blank");
+
     setSubmitted(true);
     clearCart();
   };
