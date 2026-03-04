@@ -46,7 +46,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-[hsl(0,0%,12%)]/95 backdrop-blur-xl border-b border-[hsl(0,0%,20%)] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
           <Link to="/" className="flex items-center">
             <img src={logo} alt="MG Brands Pakistan" className="h-10" />
@@ -54,17 +54,17 @@ const Navbar = () => {
 
           <div className="hidden lg:flex items-center gap-5">
             {navLinks.map((link) => (
-              <Link key={link.label} to={link.href} className="text-xs font-medium text-muted-foreground hover:text-primary transition-colors duration-300 whitespace-nowrap">
+              <Link key={link.label} to={link.href} className="text-xs font-medium text-gray-300 hover:text-primary transition-colors duration-300 whitespace-nowrap">
                 {link.label}
               </Link>
             ))}
           </div>
 
           <div className="flex items-center gap-3">
-            <button onClick={() => { setSearchOpen(!searchOpen); setSearchQuery(""); setSearchResult(null); }} className="text-foreground hover:text-primary transition-colors">
+            <button onClick={() => { setSearchOpen(!searchOpen); setSearchQuery(""); setSearchResult(null); }} className="text-gray-200 hover:text-primary transition-colors">
               <Search size={20} />
             </button>
-            <button onClick={() => setIsCartOpen(true)} className="relative text-foreground hover:text-primary transition-colors">
+            <button onClick={() => setIsCartOpen(true)} className="relative text-gray-200 hover:text-primary transition-colors">
               <ShoppingBag size={22} />
               {totalItems > 0 && (
                 <span className="absolute -top-2 -right-2 bg-primary text-primary-foreground text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold">
@@ -72,7 +72,7 @@ const Navbar = () => {
                 </span>
               )}
             </button>
-            <button className="lg:hidden text-foreground" onClick={() => setMobileOpen(!mobileOpen)}>
+            <button className="lg:hidden text-gray-200" onClick={() => setMobileOpen(!mobileOpen)}>
               {mobileOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
@@ -128,11 +128,11 @@ const Navbar = () => {
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: "auto", opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
-              className="lg:hidden bg-background border-b border-border overflow-hidden"
+              className="lg:hidden bg-[hsl(0,0%,12%)] border-b border-[hsl(0,0%,20%)] overflow-hidden"
             >
               <div className="px-4 py-4 flex flex-col gap-3">
                 {navLinks.map((link) => (
-                  <Link key={link.label} to={link.href} onClick={() => setMobileOpen(false)} className="text-base font-medium text-muted-foreground hover:text-primary transition-colors">
+                  <Link key={link.label} to={link.href} onClick={() => setMobileOpen(false)} className="text-base font-medium text-gray-300 hover:text-primary transition-colors">
                     {link.label}
                   </Link>
                 ))}
