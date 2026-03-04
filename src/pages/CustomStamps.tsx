@@ -9,6 +9,8 @@ import stampWooden from "@/assets/stamp-wooden.jpg";
 import stampPocket from "@/assets/stamp-pocket.jpg";
 import stampRound from "@/assets/stamp-round.jpg";
 import stampSignature from "@/assets/stamp-signature.jpg";
+import stampPen from "@/assets/stamp-pen.jpg";
+import stampShinyPen from "@/assets/stamp-shiny-pen.jpg";
 
 const stampTypes = [
   { id: "self-ink", name: "Self Ink Stamp", image: stampSelfInk, price: 799 },
@@ -16,6 +18,8 @@ const stampTypes = [
   { id: "pocket", name: "Pocket Stamp", image: stampPocket, price: 899 },
   { id: "round", name: "Round Stamp", image: stampRound, price: 749 },
   { id: "signature", name: "Signature Stamp", image: stampSignature, price: 999 },
+  { id: "pen-stamp", name: "Pen Stamp", image: stampPen, price: 1199 },
+  { id: "shiny-pen-stamp", name: "Shiny Pen Stamp", image: stampShinyPen, price: 1099 },
 ];
 
 const stampSizes = [
@@ -71,7 +75,7 @@ const CustomStamps = () => {
               <span className="bg-primary text-primary-foreground w-7 h-7 rounded-full flex items-center justify-center text-sm font-bold">1</span>
               Select Stamp Type
             </h2>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
               {stampTypes.map((stamp) => (
                 <button key={stamp.id} onClick={() => setSelectedStamp(stamp)}
                   className={`relative bg-card border rounded-sm overflow-hidden transition-all ${selectedStamp.id === stamp.id ? "border-primary ring-2 ring-primary/30" : "border-border hover:border-muted-foreground"}`}>

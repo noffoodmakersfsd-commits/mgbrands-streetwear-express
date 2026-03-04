@@ -25,6 +25,8 @@ import stampWooden from "@/assets/stamp-wooden.jpg";
 import stampRound from "@/assets/stamp-round.jpg";
 import stampPocket from "@/assets/stamp-pocket.jpg";
 import stampSignature from "@/assets/stamp-signature.jpg";
+import stampPen from "@/assets/stamp-pen.jpg";
+import stampShinyPen from "@/assets/stamp-shiny-pen.jpg";
 
 interface SearchItem {
   id: string;
@@ -71,6 +73,8 @@ const stampItems: SearchItem[] = [
   { id: "stamp-3", productId: "STP-003", name: "Round Stamp", price: 899, image: stampRound, categoryLabel: "Custom Stamp", navigateTo: "/custom-stamps" },
   { id: "stamp-4", productId: "STP-004", name: "Pocket Stamp", price: 999, image: stampPocket, categoryLabel: "Custom Stamp", navigateTo: "/custom-stamps" },
   { id: "stamp-5", productId: "STP-005", name: "Signature Stamp", price: 1099, image: stampSignature, categoryLabel: "Custom Stamp", navigateTo: "/custom-stamps" },
+  { id: "stamp-6", productId: "STP-006", name: "Pen Stamp", price: 1199, image: stampPen, categoryLabel: "Custom Stamp", navigateTo: "/custom-stamps" },
+  { id: "stamp-7", productId: "STP-007", name: "Shiny Pen Stamp", price: 1099, image: stampShinyPen, categoryLabel: "Custom Stamp", navigateTo: "/custom-stamps" },
 ];
 
 const navLinks = [
