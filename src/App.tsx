@@ -15,6 +15,7 @@ import Shirts from "./pages/Shirts";
 import CustomTShirtDesigns from "./pages/CustomTShirtDesigns";
 import CustomMugPrint from "./pages/CustomMugPrint";
 import CustomStamps from "./pages/CustomStamps";
+import CustomWalletDesign from "./pages/CustomWalletDesign";
 import AllCategories from "./pages/AllCategories";
 import NotFound from "./pages/NotFound";
 
@@ -40,6 +41,7 @@ const App = () => (
             <Route path="/custom-tshirt-designs" element={<CustomTShirtDesigns />} />
             <Route path="/custom-mug-print" element={<CustomMugPrint />} />
             <Route path="/custom-stamps" element={<CustomStamps />} />
+            <Route path="/custom-wallet-design" element={<CustomWalletDesign />} />
             <Route path="/all-categories" element={<AllCategories />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

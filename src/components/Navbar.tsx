@@ -27,6 +27,11 @@ import stampPocket from "@/assets/stamp-pocket.jpg";
 import stampSignature from "@/assets/stamp-signature.jpg";
 import stampPen from "@/assets/stamp-pen.jpg";
 import stampShinyPen from "@/assets/stamp-shiny-pen.jpg";
+import walletLeather from "@/assets/wallet-leather.jpg";
+import walletCardHolder from "@/assets/wallet-card-holder.jpg";
+import walletZipper from "@/assets/wallet-zipper.jpg";
+import walletMinimal from "@/assets/wallet-minimal.jpg";
+import walletLong from "@/assets/wallet-long.jpg";
 
 interface SearchItem {
   id: string;
@@ -77,12 +82,21 @@ const stampItems: SearchItem[] = [
   { id: "stamp-7", productId: "MG-060", name: "Shiny Pen Stamp", price: 1099, image: stampShinyPen, categoryLabel: "Custom Stamp", navigateTo: "/custom-stamps" },
 ];
 
+const walletItems: SearchItem[] = [
+  { id: "wallet-1", productId: "MG-061", name: "Leather Wallet", price: 2499, image: walletLeather, categoryLabel: "Custom Wallet", navigateTo: "/custom-wallet-design" },
+  { id: "wallet-2", productId: "MG-062", name: "Card Holder Wallet", price: 1799, image: walletCardHolder, categoryLabel: "Custom Wallet", navigateTo: "/custom-wallet-design" },
+  { id: "wallet-3", productId: "MG-063", name: "Zipper Wallet", price: 2799, image: walletZipper, categoryLabel: "Custom Wallet", navigateTo: "/custom-wallet-design" },
+  { id: "wallet-4", productId: "MG-064", name: "Minimal Wallet", price: 1999, image: walletMinimal, categoryLabel: "Custom Wallet", navigateTo: "/custom-wallet-design" },
+  { id: "wallet-5", productId: "MG-065", name: "Long Wallet", price: 3299, image: walletLong, categoryLabel: "Custom Wallet", navigateTo: "/custom-wallet-design" },
+];
+
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "Shirts", href: "/shirts" },
   { label: "Custom T-Shirts", href: "/custom-tshirt-designs" },
   { label: "Custom Mug Print", href: "/custom-mug-print" },
   { label: "Custom Stamps", href: "/custom-stamps" },
+  { label: "Custom Wallet", href: "/custom-wallet-design" },
   { label: "All Categories", href: "/all-categories" },
 ];
 
@@ -107,7 +121,7 @@ const Navbar = () => {
       categoryLabel: categoryLabelMap[p.category] || p.category,
       product: p,
     }));
-    return [...mainProducts, ...customTShirtDesigns, ...mugItems, ...stampItems];
+    return [...mainProducts, ...customTShirtDesigns, ...mugItems, ...stampItems, ...walletItems];
   }, []);
 
   useEffect(() => {
