@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import SiteFooter from "@/components/SiteFooter";
 import CartDrawer from "@/components/CartDrawer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import ProductCustomizer from "@/components/ProductCustomizer";
 import walletLeather from "@/assets/wallet-leather.jpg";
 import walletCardHolder from "@/assets/wallet-card-holder.jpg";
 import walletZipper from "@/assets/wallet-zipper.jpg";
