@@ -47,6 +47,7 @@ const App = () => (
             <Route path="/custom-wallet-design" element={<CustomWalletDesign />} />
             <Route path="/watches" element={<Watches />} />
             <Route path="/shoes" element={<Shoes />} />
+            <Route path="/lockets-keychains" element={<LocketsKeychains />} />
             <Route path="/all-categories" element={<AllCategories />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
