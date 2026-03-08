@@ -766,7 +766,7 @@ export const products: Product[] = [
     rating: 4.9, reviews: 102,
   },
   {
-    id: "105", productId: "MG-105", name: "Sports Shoes 05", price: 3599, image: shoeCasual, category: "shoes",
+    id: "105", productId: "MG-105", name: "Sports Shoes 05", price: 3599, image: shoeChelseaBrown, category: "shoes",
     sizes: ["39", "40", "41", "42", "43", "44"], colors: [{ name: "White/Green", hex: "#f5f5f5" }, { name: "Black/Blue", hex: "#222" }, { name: "Grey/Red", hex: "#666" }],
     material: "Breathable Textile Upper, Foam Midsole — Flex Groove Outsole",
     description: "Versatile sports shoes with flex groove outsole for natural movement. Lightweight textile upper with reinforced toe.",
