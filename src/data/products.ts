@@ -69,8 +69,50 @@ import watchUltraDigital from "@/assets/watch-ultra-digital.jpg";
 import watchAviator from "@/assets/watch-aviator.jpg";
 import watchTwoTone from "@/assets/watch-two-tone.jpg";
 import watchRacing from "@/assets/watch-racing.jpg";
+// New shoe images
+import shoeHightopNavy from "@/assets/shoe-hightop-navy.jpg";
+import shoeSlipOnGrey from "@/assets/shoe-slipon-grey.jpg";
+import shoeChunkyPlatform from "@/assets/shoe-chunky-platform.jpg";
+import shoeRetroRunner from "@/assets/shoe-retro-runner.jpg";
+import shoeTrailOlive from "@/assets/shoe-trail-olive.jpg";
+import shoeDerbyTan from "@/assets/shoe-derby-tan.jpg";
+import shoeLowtopWhite from "@/assets/shoe-lowtop-white.jpg";
+import shoeBasketballRed from "@/assets/shoe-basketball-red.jpg";
+import shoeSockBlack from "@/assets/shoe-sock-black.jpg";
+import shoeChelseaBrown from "@/assets/shoe-chelsea-brown.jpg";
+// Locket images
+import locketHeartGold from "@/assets/locket-heart-gold.jpg";
+import locketRoundSilver from "@/assets/locket-round-silver.jpg";
+import locketOvalRosegold from "@/assets/locket-oval-rosegold.jpg";
+import locketCoupleHeart from "@/assets/locket-couple-heart.jpg";
+import locketNameplateSilver from "@/assets/locket-nameplate-silver.jpg";
+import locketVintageGold from "@/assets/locket-vintage-gold.jpg";
+import locketSquareSilver from "@/assets/locket-square-silver.jpg";
+import locketButterflyGold from "@/assets/locket-butterfly-gold.jpg";
+import locketInfinityRosegold from "@/assets/locket-infinity-rosegold.jpg";
+import locketStarSilver from "@/assets/locket-star-silver.jpg";
+import locketTreeGold from "@/assets/locket-tree-gold.jpg";
+import locketCrownGold from "@/assets/locket-crown-gold.jpg";
+import locketMoonSilver from "@/assets/locket-moon-silver.jpg";
+import locketCircleRosegold from "@/assets/locket-circle-rosegold.jpg";
+import locketTeardropGold from "@/assets/locket-teardrop-gold.jpg";
+// Keychain images
+import keychainPhotoRect from "@/assets/keychain-photo-rect.jpg";
+import keychainPhotoHeart from "@/assets/keychain-photo-heart.jpg";
+import keychainLeatherName from "@/assets/keychain-leather-name.jpg";
+import keychainAcrylicRound from "@/assets/keychain-acrylic-round.jpg";
+import keychainInitialSilver from "@/assets/keychain-initial-silver.jpg";
+import keychainCouplePuzzle from "@/assets/keychain-couple-puzzle.jpg";
+import keychainWoodenCustom from "@/assets/keychain-wooden-custom.jpg";
+import keychainCrystalCube from "@/assets/keychain-crystal-cube.jpg";
+import keychainResinFlower from "@/assets/keychain-resin-flower.jpg";
+import keychainDogtagSteel from "@/assets/keychain-dogtag-steel.jpg";
+import keychainCarabiner from "@/assets/keychain-carabiner.jpg";
+import keychainGlobeSilver from "@/assets/keychain-globe-silver.jpg";
+import keychainBottleOpener from "@/assets/keychain-bottle-opener.jpg";
+import keychainCarSilver from "@/assets/keychain-car-silver.jpg";
 
-export type ProductCategory = "hoodies" | "tshirts" | "sweatshirts" | "jackets" | "streetwear-sets" | "shirts" | "watches" | "shoes" | "new-arrivals";
+export type ProductCategory = "hoodies" | "tshirts" | "sweatshirts" | "jackets" | "streetwear-sets" | "shirts" | "watches" | "shoes" | "lockets-keychains" | "new-arrivals";
 
 export interface Product {
   id: string;
