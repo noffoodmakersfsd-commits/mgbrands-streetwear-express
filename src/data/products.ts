@@ -745,7 +745,7 @@ export const products: Product[] = [
     rating: 4.7, reviews: 88,
   },
   {
-    id: "102", productId: "MG-102", name: "Sports Shoes 02", price: 4299, image: shoeRunning, category: "shoes", badge: "New",
+    id: "102", productId: "MG-102", name: "Sports Shoes 02", price: 4299, image: shoeLowtopWhite, category: "shoes", badge: "New",
     sizes: ["39", "40", "41", "42", "43", "44"], colors: [{ name: "Grey/Orange", hex: "#666" }, { name: "Black/Yellow", hex: "#222" }, { name: "Navy/Cyan", hex: "#1a1a3e" }],
     material: "Flyknit Upper, React Foam Midsole — Waffle Outsole",
     description: "Engineered flyknit sports shoes with responsive react foam. Flexible waffle outsole for multi-surface traction.",
