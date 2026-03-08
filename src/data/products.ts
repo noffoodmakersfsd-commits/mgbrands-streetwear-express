@@ -703,10 +703,10 @@ export const products: Product[] = [
   },
   // ── Additional Shoes ──
   {
-    id: "96", productId: "MG-096", name: "Sneakers 01", price: 3699, image: shoeSneakers, category: "shoes",
-    sizes: ["39", "40", "41", "42", "43", "44"], colors: [{ name: "White", hex: "#f5f5f5" }, { name: "Black", hex: "#222" }, { name: "Grey", hex: "#999" }],
+    id: "96", productId: "MG-096", name: "Sneakers 01", price: 3699, image: shoeHightopNavy, category: "shoes",
+    sizes: ["39", "40", "41", "42", "43", "44"], colors: [{ name: "Navy", hex: "#1a1a3e" }, { name: "Black", hex: "#222" }, { name: "Grey", hex: "#999" }],
     material: "Premium Canvas Upper, Rubber Sole — Handcrafted",
-    description: "Classic canvas sneakers with cushioned insole and durable rubber outsole. Timeless design for everyday streetwear.",
+    description: "Classic high-top canvas sneakers with cushioned insole and durable rubber outsole. Timeless design for everyday streetwear.",
     rating: 4.6, reviews: 78,
   },
   {
