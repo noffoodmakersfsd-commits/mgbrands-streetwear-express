@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import SiteFooter from "@/components/SiteFooter";
 import CartDrawer from "@/components/CartDrawer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import ProductCustomizer from "@/components/ProductCustomizer";
 import mugClassicWhite from "@/assets/mug-classic-white.jpg";
 import mugBlack from "@/assets/mug-black.jpg";
 import mugMagic from "@/assets/mug-magic.jpg";
