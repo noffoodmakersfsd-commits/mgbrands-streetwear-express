@@ -752,7 +752,7 @@ export const products: Product[] = [
     rating: 4.8, reviews: 76,
   },
   {
-    id: "103", productId: "MG-103", name: "Sports Shoes 03", price: 3799, image: shoeSneakers, category: "shoes",
+    id: "103", productId: "MG-103", name: "Sports Shoes 03", price: 3799, image: shoeBasketballRed, category: "shoes",
     sizes: ["39", "40", "41", "42", "43", "44"], colors: [{ name: "White/Black", hex: "#f5f5f5" }, { name: "Black/White", hex: "#222" }, { name: "Blue/Grey", hex: "#1a1a3e" }],
     material: "Synthetic Mesh Upper, Air Unit Midsole — Rubber Outsole",
     description: "Air-cushioned sports shoes for maximum shock absorption. Lightweight and supportive for training sessions.",
