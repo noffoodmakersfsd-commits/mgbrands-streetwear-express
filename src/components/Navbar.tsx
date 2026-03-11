@@ -113,6 +113,7 @@ const customizationLinks = [
 
 const Navbar = () => {
   const { totalItems, setIsCartOpen } = useCart();
+  const { user } = useAuth();
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
