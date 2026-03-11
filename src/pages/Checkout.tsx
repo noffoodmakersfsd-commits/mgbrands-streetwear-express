@@ -36,7 +36,6 @@ const Checkout = () => {
     }
   }, [profile]);
 
-  const deliveryCharge = 200;
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
